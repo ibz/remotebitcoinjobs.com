@@ -24,6 +24,7 @@
                         </i>
                     </a>
                 {% endif %}
+                {% comment %}
                 <!-- github -->
                 {% if site.github != "" %}
                     <a class="header_btn" href="https://github.com/{{ site.github }}">
@@ -34,6 +35,7 @@
                         </i>
                     </a>
                 {% endif %}
+                {% endcomment %}
                 <!-- maximize -->
                 {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
@@ -43,17 +45,6 @@
                             {% endif %}
                         </i>
                     </a>
-                {% endif %}
-                <!-- access token -->
-                {% if page.encrypted_text == true %}
-                    <a class="header_btn" id="acs_btn" onclick="apply_token()">
-                        <i class="fa fa-key">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Token</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                    <textarea class="access_token" cols="8" id="acs_tkn" rows="1"></textarea>
                 {% endif %}
             </li>
             <!-- right header -->
