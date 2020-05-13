@@ -67,20 +67,10 @@
                             {% endif %}
                         </i>
                     </a>
-                    <!-- popup table of content -->
-                    <a class="header_btn popup_btn" onclick="toggle_toc()">
-                        <i class="fa fa-bars">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Content</p>
-                            {% endif %}
-                        </i>
-                    </a>
                 {% else site.title %}
                     <a class="title">{{ site.title }}</a>
                     {% if site.owner != ""%}
-                        <a class="owner">
-                            -
-                            {{ site.owner }}</a>
+                        by <a class="owner" href="http://twitter.com/{{ site.owner }}">@{{ site.owner }}</a>
                     {% endif %}
                 {% endif %}
             </span>
@@ -101,13 +91,6 @@
     <!-- generate toc -->
     {% include toc.html html=page sanitize=true class="ul_toc" id="ul_toc" h_min=1 h_max=toclv %}
     </div>
-    <!-- toggle toc -->
-    <script>
-    function toggle_toc() {
-        var popup = document.getElementById("popup_toc");
-        popup.classList.toggle("show");
-    }
-    </script>
     <!-- scroll page -->
         <script>
     function scroll_percentage(mtpler) {

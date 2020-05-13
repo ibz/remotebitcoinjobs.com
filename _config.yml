@@ -10,7 +10,7 @@ webrick:
   headers:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
-email: "contact@remotebitcoinjobs.com"
+email: "hello@remotebitcoinjobs.com"
 github: "ibz/remotebitcoinjobs.com"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets" 
