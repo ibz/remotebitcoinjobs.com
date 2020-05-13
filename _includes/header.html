@@ -14,6 +14,14 @@
                         </i>
                     </a>
                 {% endif %}
+                <!-- about -->
+                    <a class="header_btn" href="{{ site.url }}{{ site.baseurl }}about/">
+                        <i class="fa fa-about">
+                            {% if page.btn_text != false %}
+                                <p class="btn_text">About</p>
+                            {% endif %}
+                        </i>
+                    </a>
                 <!-- email -->
                 {% if site.email != ""%}
                     <a class="header_btn" href="mailto://{{ site.email }}">
@@ -36,6 +44,17 @@
                     </a>
                 {% endif %}
                 {% endcomment %}
+            </li>
+            <!-- right header -->
+            <span
+                class="span_right">
+                <!-- popup table of content -->
+                {% if site.title %}
+                    <a class="title">{{ site.title }}</a>
+                    {% if site.owner != "" %}
+                        by <a class="owner" href="http://twitter.com/{{ site.owner }}">@{{ site.owner }}</a>
+                    {% endif %}
+                {% endif %}
                 <!-- maximize -->
                 {% if page.maximize != false %}
                     <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
@@ -45,33 +64,6 @@
                             {% endif %}
                         </i>
                     </a>
-                {% endif %}
-            </li>
-            <!-- right header -->
-            <span
-                class="span_right">
-                <!-- popup table of content -->
-                {% if page.toc != false %}
-                    <a class="header_btn" onclick="scroll_percentage(-0.88)">
-                        <i class="fa fa-backward">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Prev</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                    <!-- scroll down -->
-                    <a class="header_btn" onclick="scroll_percentage(0.88)">
-                        <i class="fa fa-forward">
-                            {% if page.btn_text != false %}
-                                <p class="btn_text">Next</p>
-                            {% endif %}
-                        </i>
-                    </a>
-                {% else site.title %}
-                    <a class="title">{{ site.title }}</a>
-                    {% if site.owner != ""%}
-                        by <a class="owner" href="http://twitter.com/{{ site.owner }}">@{{ site.owner }}</a>
-                    {% endif %}
                 {% endif %}
             </span>
         </ul>
@@ -91,14 +83,6 @@
     <!-- generate toc -->
     {% include toc.html html=page sanitize=true class="ul_toc" id="ul_toc" h_min=1 h_max=toclv %}
     </div>
-    <!-- scroll page -->
-        <script>
-    function scroll_percentage(mtpler) {
-        document
-        .getElementById("div_atcl")
-        .scrollBy(0, window.innerHeight * mtpler);
-    }
-    </script>
 {% endif %}
 <!-- toggle maximize -->
 {% if page.maximize != false %}
