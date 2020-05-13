@@ -2,7 +2,7 @@
 title: remotebitcoinjobs
 owner: "ibz"
 url: "http://remotebitcoinjobs.com"
-baseurl: "/"
+baseurl: ""
 permalink: /:title/
 description: ""
 markdown: kramdown
