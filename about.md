@@ -8,3 +8,5 @@ Hello!
 Welcome to remotebitcoinjobs.com. *The* place to look for a job if you are a Bitcoin maximalist!
 
 If you want to post a job, please email post@remotebitcoinjobs.com. No crypto/blockchain jobs accepted.
+
+See also: [Bitcoin Quotes](http://bitcoinquotes.net)
