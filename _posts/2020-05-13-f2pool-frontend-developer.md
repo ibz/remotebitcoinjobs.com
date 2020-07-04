@@ -3,7 +3,6 @@ company: F2Pool
 title: Front-End Developer
 layout: post
 category: Engineering
-date: 2020-05-13
 ---
 
 Who are we?
@@ -36,6 +35,6 @@ If those describe you, this is the right opportunity for you!
 Why are we awesome you ask?
 ---
 
-We are a truly global team! We are digital nomads coming from more than 12 different countries, working from wherever we want. We have a collective mission, to provide meaningful services and bring a unique value to users within the crypto space.
+We are a truly global team! We are digital nomads coming from more than 12 different countries, working from wherever we want. We have a collective mission, to provide meaningful services and bring a unique value to users within the Bitcoin space.
 
 * [Apply for this job!](https://jobs.lever.co/fish/8d283b27-2ef9-4ed8-a8b4-81fa1d291634/apply)
