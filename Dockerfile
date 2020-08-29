@@ -1,6 +1,6 @@
 FROM jekyll/builder AS dev_builder
 
-WORKDIR /srv/jekyll
+WORKDIR /tmp
 
 COPY Gemfile Gemfile*.lock ./
 
@@ -13,6 +13,6 @@ RUN jekyll build
 
 FROM nginx:alpine AS prod_serv
 
-COPY --from=dev_builder /srv/jekyll/_site /usr/share/nginx/html
+COPY --from=dev_builder /tmp/_site /usr/share/nginx/html
 
 EXPOSE 80

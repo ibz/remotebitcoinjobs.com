@@ -1,0 +1,1 @@
+docker run -d -e VIRTUAL_HOST=remotebitcoinjobs.com --network=webproxy --name=remotebitcoinjobs -e LETSENCRYPT_HOST=remotebitcoinjobs.com -e LETSENCRYPT_EMAIL=remotebitcoinjobs@ibz.me ibz0/remotebitcoinjobs.com
